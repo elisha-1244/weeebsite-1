@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Bus Booking Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-container {
+        background-color: #f0f8ff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h2 {
+        color: #007BFF;
+    }
+    
+    label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        color: #007BFF;
+    }
+    
+    input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    
+    button {
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    p {
+        margin-top: 10px;
+    }
+    
+    a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    </style>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="register-form" class="form" action="#">
+                <h2>Register</h2>
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" name="username" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="Weblogin.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>
